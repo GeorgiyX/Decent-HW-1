@@ -1,0 +1,3 @@
+/media/adminu/7E3E8A493E89FA83/Users/Admin/Documents/Prog/BlockChain&Decet/HW#1/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/media/adminu/7E3E8A493E89FA83/Users/Admin/Documents/Prog/BlockChain&Decet/HW#1/cmake-build-debug/CMakeFiles/edit_cache.dir
+/media/adminu/7E3E8A493E89FA83/Users/Admin/Documents/Prog/BlockChain&Decet/HW#1/cmake-build-debug/CMakeFiles/HW_1.dir
