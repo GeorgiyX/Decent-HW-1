@@ -3,10 +3,6 @@
 
 #include <string>
 
-#define FILE_ARG 10
-#define TICKET_COUNT_ARG 20
-#define PERMUTATION_ARG 30
-
 namespace HW1 {
     struct ProgramArgs {
         std::string filePath;

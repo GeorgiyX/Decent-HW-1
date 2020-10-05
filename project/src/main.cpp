@@ -1,4 +1,6 @@
 #include <iostream>
+#include <cstdlib>
+#include "Utils.h"
 /// @brief Софтина должа читать файлик с фамилиями и выдвавать номера билетов
 /// (известно количество билетов и permutation параметр).
 /// 1. Все три значения: ФИО, количество билетов, permutation вляют на результат
@@ -17,7 +19,8 @@
  *    * Можно считать хэш от 3х параметров и пихать его в seed рандома, затем брать рандом %mod N_билетов.
  *      Хотя по-сути это не нужно - это хэш функция фигня и хэши совпали - то и результат рандома, тоже будет
  *      совпадать*/
-int main() {
+int main(int argc, char **argv) {
     std::cout << "Hello, World!" << std::endl;
-    return 0;
+    HW1::ProgramArgs programArgs;
+    return HW1::parseArgs(argc, argv, programArgs);
 }
