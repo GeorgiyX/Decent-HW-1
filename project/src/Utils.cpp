@@ -1,7 +1,6 @@
 #include <getopt.h>
 #include <iostream>
 #include <fstream>
-#include <iomanip>
 #include "Utils.h"
 
 #define FILE_ARG_RETURN 'f'
