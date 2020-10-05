@@ -19,7 +19,7 @@ void testCase(std::string &fileCasePath, size_t ticketCount, int param) {
     std::vector<size_t> ticketDistribution(ticketCount);
     auto rowCount = assignTickets(ticketDistribution, fileCasePath, ticketCount, param);
     std::cout << "Ticket " << "\tCount" << "\tPercent" << std::endl;
-    for (int ticketNo = 0; ticketNo < ticketCount; ticketNo++) {
+    for (size_t ticketNo = 0; ticketNo < ticketCount; ticketNo++) {
         std::cout << ticketNo << "\t\t" << ticketDistribution[ticketNo] << "\t\t"
                   << static_cast<double>(ticketDistribution[ticketNo] * 100) / rowCount << std::endl;
     }
