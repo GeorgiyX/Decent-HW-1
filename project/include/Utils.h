@@ -9,8 +9,9 @@ namespace HW1 {
         size_t ticketsCount;
         int permutationParam;
     };
-    bool parseArgs(int argc, char **argv, struct ProgramArgs &programArgs);
-    size_t getTicketNo(std::string studentName, size_t ticketCount, size_t permutationParam);
+    void parseArgs(int argc, char **argv, struct ProgramArgs &programArgs);
+    size_t getTicketNo(std::string &studentName, size_t ticketCount, int permutationParam);
+    void printStudentsTickets(struct ProgramArgs &programArgs);
 
 }  // namespace HW1
 

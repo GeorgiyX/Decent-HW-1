@@ -1,5 +1,4 @@
 #include <iostream>
-#include <cstdlib>
 #include "Utils.h"
 /// @brief Софтина должа читать файлик с фамилиями и выдвавать номера билетов
 /// (известно количество билетов и permutation параметр).
@@ -20,7 +19,14 @@
  *      Хотя по-сути это не нужно - это хэш функция фигня и хэши совпали - то и результат рандома, тоже будет
  *      совпадать*/
 int main(int argc, char **argv) {
-    std::cout << "Hello, World!" << std::endl;
-    HW1::ProgramArgs programArgs;
-    return HW1::parseArgs(argc, argv, programArgs);
+    try {
+        HW1::ProgramArgs programArgs;
+        HW1::parseArgs(argc, argv, programArgs);
+        HW1::printStudentsTickets(programArgs);
+    } catch (std::runtime_error &runtimeError) {
+        std::cout << "Error: " << runtimeError.what() << std::endl;
+    } catch (...) {
+        std::cout << "Some error" << std::endl;
+    }
+    return 0;
 }
